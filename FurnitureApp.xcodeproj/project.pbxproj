@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21831292667CA100032E03F /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21831282667CA100032E03F /* DetailedView.swift */; };
+		D218312B2667CD790032E03F /* FurnitureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D218312A2667CD790032E03F /* FurnitureModel.swift */; };
+		D241AE8F26680D6D00924D10 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D241AE8E26680D6D00924D10 /* CloseButton.swift */; };
+		D241AE9226680F4C00924D10 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = D241AE9126680F4C00924D10 /* SwiftUIX */; };
+		D283D8852668B50A00C2FACF /* LoremSwiftum in Frameworks */ = {isa = PBXBuildFile; productRef = D283D8842668B50A00C2FACF /* LoremSwiftum */; };
 		D2C43EAD26675FEA00D60762 /* FurnitureAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C43EAC26675FEA00D60762 /* FurnitureAppApp.swift */; };
 		D2C43EAF26675FEA00D60762 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C43EAE26675FEA00D60762 /* ContentView.swift */; };
 		D2C43EB126675FEF00D60762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C43EB026675FEF00D60762 /* Assets.xcassets */; };
@@ -14,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D21831282667CA100032E03F /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		D218312A2667CD790032E03F /* FurnitureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureModel.swift; sourceTree = "<group>"; };
+		D241AE8E26680D6D00924D10 /* CloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		D2C43EA926675FEA00D60762 /* FurnitureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FurnitureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C43EAC26675FEA00D60762 /* FurnitureAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureAppApp.swift; sourceTree = "<group>"; };
 		D2C43EAE26675FEA00D60762 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,12 +35,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D283D8852668B50A00C2FACF /* LoremSwiftum in Frameworks */,
+				D241AE9226680F4C00924D10 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D283D88026687AAF00C2FACF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D218312A2667CD790032E03F /* FurnitureModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D2C43EA026675FEA00D60762 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +72,9 @@
 			children = (
 				D2C43EAC26675FEA00D60762 /* FurnitureAppApp.swift */,
 				D2C43EAE26675FEA00D60762 /* ContentView.swift */,
+				D21831282667CA100032E03F /* DetailedView.swift */,
+				D241AE8E26680D6D00924D10 /* CloseButton.swift */,
+				D283D88026687AAF00C2FACF /* Models */,
 				D2C43EB026675FEF00D60762 /* Assets.xcassets */,
 				D2C43EB526675FEF00D60762 /* Info.plist */,
 				D2C43EB226675FEF00D60762 /* Preview Content */,
@@ -85,6 +106,10 @@
 			dependencies = (
 			);
 			name = FurnitureApp;
+			packageProductDependencies = (
+				D241AE9126680F4C00924D10 /* SwiftUIX */,
+				D283D8842668B50A00C2FACF /* LoremSwiftum */,
+			);
 			productName = FurnitureApp;
 			productReference = D2C43EA926675FEA00D60762 /* FurnitureApp.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +137,10 @@
 				Base,
 			);
 			mainGroup = D2C43EA026675FEA00D60762;
+			packageReferences = (
+				D241AE9026680F4C00924D10 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+				D283D8832668B50A00C2FACF /* XCRemoteSwiftPackageReference "LoremSwiftum" */,
+			);
 			productRefGroup = D2C43EAA26675FEA00D60762 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D241AE8F26680D6D00924D10 /* CloseButton.swift in Sources */,
+				D218312B2667CD790032E03F /* FurnitureModel.swift in Sources */,
 				D2C43EAF26675FEA00D60762 /* ContentView.swift in Sources */,
+				D21831292667CA100032E03F /* DetailedView.swift in Sources */,
 				D2C43EAD26675FEA00D60762 /* FurnitureAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +360,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D241AE9026680F4C00924D10 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+		D283D8832668B50A00C2FACF /* XCRemoteSwiftPackageReference "LoremSwiftum" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukaskubanek/LoremSwiftum.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D241AE9126680F4C00924D10 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D241AE9026680F4C00924D10 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+		D283D8842668B50A00C2FACF /* LoremSwiftum */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D283D8832668B50A00C2FACF /* XCRemoteSwiftPackageReference "LoremSwiftum" */;
+			productName = LoremSwiftum;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2C43EA126675FEA00D60762 /* Project object */;
 }
